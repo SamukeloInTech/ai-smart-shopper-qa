@@ -1,11 +1,56 @@
 # Executed Test Cases
 
-| Test ID | Scenario | Expected Result | Status |
-| :--- | :--- | :--- | :--- |
-| **TC_001** | Verify NSFAS warning for budget > R1,750 | System saves budget but displays a warning. | **PASS** |
-| **TC_002** | Verify mutually exclusive budgets | System blocks creating individual budgets if a combined one exists. | **PASS** |
-| **TC_003** | Verify "Proceed to Summary" is disabled when over budget | Button is disabled until list is under budget. | **PASS** |
-| **TC_005** | Verify successful login with valid credentials | User is redirected to Dashboard. | **PASS** |
-| **TC_006** | Verify login fails with invalid password | System displays error and denies access. | **PASS** |
-| **TC_007** | Verify rate limiting after multiple failed logins | System triggers rate limiter after rapid failed attempts. | **PASS** |
-| **TC_004** | Verify API rejects negative quantity | API should return 400 Bad Request. | **FAIL** (See BUG-001) |
+<table>
+  <thead>
+    <tr>
+      <th>Test ID</th>
+      <th>Scenario</th>
+      <th>Expected Result</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>TC_001</strong></td>
+      <td>Verify NSFAS warning for budget > R1,750</td>
+      <td>System saves budget but displays a warning.</td>
+      <td><strong>PASS</strong></td>
+    </tr>
+    <tr>
+      <td><strong>TC_002</strong></td>
+      <td>Verify mutually exclusive budgets</td>
+      <td>System blocks creating individual budgets if a combined one exists.</td>
+      <td><strong>PASS</strong></td>
+    </tr>
+    <tr>
+      <td><strong>TC_003</strong></td>
+      <td>Verify "Proceed to Summary" is disabled when over budget</td>
+      <td>Button is disabled until list is under budget.</td>
+      <td><strong>PASS</strong></td>
+    </tr>
+    <tr>
+      <td><strong>TC_005</strong></td>
+      <td>Verify successful login with valid credentials</td>
+      <td>User is redirected to Dashboard.</td>
+      <td><strong>PASS</strong></td>
+    </tr>
+    <tr>
+      <td><strong>TC_006</strong></td>
+      <td>Verify login fails with invalid password</td>
+      <td>System displays error and denies access.</td>
+      <td><strong>PASS</strong></td>
+    </tr>
+    <tr>
+      <td><strong>TC_007</strong></td>
+      <td>Verify rate limiting after multiple failed logins</td>
+      <td>System triggers rate limiter after rapid failed attempts.</td>
+      <td><strong>PASS</strong></td>
+    </tr>
+    <tr>
+      <td><strong>TC_004</strong></td>
+      <td>Verify API rejects negative quantity</td>
+      <td>API should return 400 Bad Request.</td>
+      <td><strong>FAIL</strong> (See BUG-001)</td>
+    </tr>
+  </tbody>
+</table>
